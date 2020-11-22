@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Discover"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp"
+        android:id="@+id/StartDisc"
+        android:onClick="enableDiscovery"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="End Discovery"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp"
+        android:id="@+id/EndDisc"
+        android:layout_toRightOf="@+id/StartDisc"
+        android:onClick="disableDiscovery"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Discoverable"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp"
+        android:id="@+id/E_Disco"
+        android:layout_below="@+id/StartDisc"
+        android:onClick="makeDiscoverable"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Undiscoverable"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp"
+        android:id="@+id/D_Disco"
+        android:layout_below="@+id/EndDisc"
+        android:layout_toRightOf="@+id/E_Disco"
+        android:onClick="stopDiscoverable"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start LE Scan"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp"
+        android:id="@+id/LE_scan"
+        android:layout_below="@+id/E_Disco"
+        android:onClick="leScan"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop Le Scan"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp"
+        android:id="@+id/LE_scan_stop"
+        android:layout_below="@+id/D_Disco"
+        android:layout_toRightOf="@+id/E_Disco"
+        android:onClick="stopLeScan"
+
+        />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Msh Received"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:padding="10dp"
+    android:id="@+id/msg_disp"
+    android:layout_below="@+id/LE_scan"
+    />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop Le Scan"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp"
+        android:id="@+id/clear"
+        android:layout_below="@+id/LE_scan_stop"
+        android:layout_toRightOf="@+id/msg_disp"
+        android:onClick="clear"/>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
